@@ -40,8 +40,8 @@ maindrec: main.c libclassrec.so
 main.o: main.c NumClass.h
 		$(CC) $(FLAGS) -c main.c -lm
 
-advancedClassificationLoop.o: advancedClassification.c
-		$(CC) $(FLAGS) -c advancedClassification.c
+advancedClassificationLoop.o: advancedClassificationLoop.c
+		$(CC) $(FLAGS) -c advancedClassificationLoop.c
 
 advancedClassificationRecursion.o: advancedClassificationRecursion.c
 		$(CC) $(FLAGS) -c advancedClassificationRecursion.c
