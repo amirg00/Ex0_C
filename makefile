@@ -2,7 +2,7 @@ CC = gcc
 FLAGS = -Wall -g
 AR=ar
 
-LIBOBJECTS_1 = basicClassification.o advancedClassification.o
+LIBOBJECTS_1 = basicClassification.o advancedClassificationLoop.o
 LIBOBJECTS_2 = basicClassification.o advancedClassificationRecursion.o
 
 
@@ -40,7 +40,7 @@ maindrec: main.c libclassrec.so
 main.o: main.c NumClass.h
 		$(CC) $(FLAGS) -c main.c -lm
 
-advancedClassification.o: advancedClassification.c
+advancedClassificationLoop.o: advancedClassification.c
 		$(CC) $(FLAGS) -c advancedClassification.c
 
 advancedClassificationRecursion.o: advancedClassificationRecursion.c
